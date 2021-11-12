@@ -9,8 +9,8 @@ while True:
             print("open")
             a = 1
             server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-            server.login("adam.pospisek@gmail.com", "********")
-            server.sendmail("váš gmail/gmail odesílatele", "gmail příjemce", "otevřeno")
+            server.login("adam.pospisek@gmail.com", "Zlaterybicky1")
+            server.sendmail("adam.pospisek@gmail.com", "adam.pospisek@email.cz", "otevřeno")
             server.quit()
 
 
@@ -19,6 +19,6 @@ while True:
               print("close")
               a = 2
               server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-              server.login("adam.pospisek@gmail.com", "********")
+              server.login("adam.pospisek@gmail.com", "Zlaterybicky1")
               server.sendmail("adam.pospisek@gmail.com", "adam.pospisek@email.cz", "zavřeno")
               server.quit()
